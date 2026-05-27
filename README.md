@@ -37,8 +37,8 @@ python3 reformat_pdf.py INPUT.pdf -o OUTPUT.pdf
 Examples:
 
 ```bash
-python3 reformat_pdf.py bea.pdf
-python3 reformat_pdf.py /home/user/Downloads/Quentin-Tello.pdf -o Quentin-Tello-modified.pdf
+python3 reformat_pdf.py velvet-labyrinth.pdf
+python3 reformat_pdf.py /home/user/Downloads/crimson-atlas.pdf -o crimson-atlas-modified.pdf
 ```
 
 ### Windows
@@ -46,22 +46,22 @@ python3 reformat_pdf.py /home/user/Downloads/Quentin-Tello.pdf -o Quentin-Tello-
 Use `reformat_pdf_windows.py` (or the included batch launcher). Paths may use backslashes or forward slashes; quotes are needed when a path contains spaces.
 
 ```powershell
-py -3 reformat_pdf_windows.py C:\Books\bea.pdf
-py -3 reformat_pdf_windows.py bea.pdf -o C:\Books\bea_statement.pdf
+py -3 reformat_pdf_windows.py C:\Books\velvet-labyrinth.pdf
+py -3 reformat_pdf_windows.py velvet-labyrinth.pdf -o C:\Books\velvet-labyrinth_statement.pdf
 ```
 
 From Command Prompt, you can also run the batch file in the project folder (it calls `py -3` when available, otherwise `python`):
 
 ```cmd
-reformat_pdf.bat "C:\Books\My Book.pdf"
-reformat_pdf.bat bea.pdf -o C:\Books\bea_statement.pdf
+reformat_pdf.bat "C:\Books\Silver Compass.pdf"
+reformat_pdf.bat obsidian-vault.pdf -o C:\Books\obsidian-vault_statement.pdf
 ```
 
 Examples:
 
 ```powershell
-py -3 reformat_pdf_windows.py bea.pdf
-py -3 reformat_pdf_windows.py C:\Users\you\Downloads\Quentin-Tello.pdf -o Quentin-Tello-modified.pdf
+py -3 reformat_pdf_windows.py marble-oracle.pdf
+py -3 reformat_pdf_windows.py C:\Users\you\Downloads\crimson-atlas.pdf -o crimson-atlas-modified.pdf
 ```
 
 `reformat_pdf_windows.py` must stay in the same folder as `reformat_pdf.py` (it imports the shared processing logic). The Windows script resolves paths with `pathlib`, enables UTF-8 console output, and supports long paths when needed.
